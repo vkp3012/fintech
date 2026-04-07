@@ -46,17 +46,18 @@ export default function About() {
           </Grid>
 
           {/* ── Right: Pillar cards ── */}
-          <Grid item xs={12} md={7}>
-            <Grid container spacing={2}>
+          <Grid item xs={12} md={1}>
+            <Grid container spacing={5}>
               {PILLARS.map((p) => (
                 <Grid item xs={6} key={p.title}>
                   <Box sx={{
-                    bgcolor: "#fff", borderRadius: 3, p: 3,
+                    bgcolor: "#fff", borderRadius: 3, p: 1,
+
                     border: "1px solid rgba(0,0,0,0.06)", height: "100%",
                     transition: "all 0.3s",
                     "&:hover": { boxShadow: "0 8px 30px rgba(26,60,143,0.1)", borderColor: "#1A3C8F20" },
                   }}>
-                    <Typography sx={{ fontSize: "2rem", mb: 1 }}>{p.icon}</Typography>
+                    <Typography sx={{ fontSize: "2rem", mb: 5 }}>{p.icon}</Typography>
                     <Typography sx={{ fontFamily: '"Syne",sans-serif', fontWeight: 700, color: "#1A3C8F", mb: 0.5 }}>
                       {p.title}
                     </Typography>

@@ -14,7 +14,7 @@ export default function Header({ onSectionClick }) {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    const fn = () => setScrolled(window.scrollY > 40);
+    const fn = () => setScrolled(window.scrollY > 70);
     window.addEventListener("scroll", fn);
     return () => window.removeEventListener("scroll", fn);
   }, []);
@@ -36,11 +36,11 @@ export default function Header({ onSectionClick }) {
       }}
     >
       <Container maxWidth="lg">
-        <Stack direction="row" alignItems="center" justifyContent="space-between" sx={{ py: 1.5 }}>
+        <Stack direction="row" alignItems="center" justifyContent="space-between" sx={{ py: 2 }}>
 
           {/* ── Logo ── */}
           <Stack
-            direction="row" alignItems="center" spacing={1.2}
+            direction="row" alignItems="center" spacing={1}
             sx={{ cursor: "pointer" }}
             onClick={() => onSectionClick("hero")}
           >
@@ -72,7 +72,7 @@ export default function Header({ onSectionClick }) {
                   key={l}
                   onClick={() => handleNav(l)}
                   sx={{
-                    color: "#0D1B3E", fontWeight: 500, fontSize: "0.85rem", px: 1.5,
+                    color: "#0D1B3E", fontWeight: 1000, fontSize: "1rem", px: 1.5,
                     "&:hover": { color: "#1A3C8F", background: "rgba(26,60,143,0.06)" },
                   }}
                 >

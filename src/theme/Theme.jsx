@@ -17,14 +17,14 @@ const theme = createTheme({
     h5: { fontFamily: '"Syne", sans-serif', fontWeight: 600 },
     h6: { fontFamily: '"Syne", sans-serif', fontWeight: 600 },
   },
-  breakpoints: { values: { xs: 0, sm: 480, md: 768, lg: 1024, xl: 1280 } },
+  breakpoints: { values: { xs: 0, sm: 500, md: 768, lg: 1204, xl: 1200 } },
   components: {
     MuiButton: {
       styleOverrides: {
         root: {
-          borderRadius: 8,
+          borderRadius: 1,
           textTransform: "none",
-          fontWeight: 600,
+          fontWeight: 900,
           fontSize: "0.9rem",
         },
       },

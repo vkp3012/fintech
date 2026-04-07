@@ -20,13 +20,13 @@ export default function Services() {
         </Box>
 
         {/* Cards */}
-        <Grid container spacing={3}>
+        <Grid container spacing={5}>
           {SERVICES.map((s) => {
             const Icon = ICON_MAP[s.iconName];
             return (
-              <Grid item xs={12} sm={6} lg={4} key={s.title}>
+              <Grid item xs={10} sm={10} lg={10} key={s.title}>
                 <Box sx={{
-                  bgcolor: "#fff", borderRadius: 3, p: 3, height: "100%",
+                  bgcolor: "#fff", borderRadius: 3, p: 2, height: "100%",
                   border: "1px solid rgba(0,0,0,0.06)", transition: "all 0.3s",
                   "&:hover": {
                     transform: "translateY(-4px)",
@@ -36,9 +36,9 @@ export default function Services() {
                 }}>
                   {/* Icon */}
                   <Box sx={{
-                    width: 52, height: 52, borderRadius: "12px",
+                    width: 52, height: 82, borderRadius: "12px",
                     bgcolor: s.bg, color: s.color,
-                    display: "flex", alignItems: "center", justifyContent: "center", mb: 2,
+                    display: "flex", alignItems: "center", justifyContent: "center", mb: 3,
                   }}>
                     <Icon sx={{ fontSize: 28 }} />
                   </Box>
@@ -46,12 +46,12 @@ export default function Services() {
                   <Typography variant="h6" sx={{ fontSize: "1rem", color: "#0D1B3E", mb: 1 }}>
                     {s.title}
                   </Typography>
-                  <Typography sx={{ fontSize: "0.82rem", color: "#5A6A85", lineHeight: 1.7, mb: 2 }}>
+                  <Typography sx={{ fontSize: "0.8rem", color: "#5A6A85", lineHeight: 1.7, mb: 2 }}>
                     {s.desc}
                   </Typography>
 
                   {/* Feature list (first 4) */}
-                  <Stack spacing={0.7}>
+                  <Stack spacing={1}>
                     {s.items.slice(0, 4).map((item) => (
                       <Stack key={item} direction="row" spacing={1} alignItems="center">
                         <CheckCircle sx={{ fontSize: 14, color: s.color }} />

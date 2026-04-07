@@ -14,11 +14,11 @@ const KPI_CARDS = [
 
 export default function Dashboard() {
   return (
-    <Box id="dashboard" sx={{ py: { xs: 6, md: 10 }, bgcolor: "#fff" }}>
+    <Box id="dashboard" sx={{ py: { xs: 9, md: 9 }, bgcolor: "#cdc3c3" }}>
       <Container maxWidth="lg">
 
         {/* Heading */}
-        <Box textAlign="center" mb={7}>
+        <Box textAlign="center" mb={2}>
           <Chip label="MIS & Analytics" sx={{ bgcolor: "#FFF4EC", color: "#F47B20", mb: 2, fontWeight: 600, fontSize: "0.75rem" }} />
           <Typography variant="h2" sx={{ fontSize: { xs: "1.8rem", md: "2.4rem" }, color: "#0D1B3E", mb: 1.5 }}>
             Data-Driven Decision Making
@@ -28,17 +28,17 @@ export default function Dashboard() {
           </Typography>
         </Box>
 
-        <Grid container spacing={3}>
+        <Grid container spacing={10}>
 
           {/* KPI cards */}
           {KPI_CARDS.map((k) => (
-            <Grid item xs={6} md={3} key={k.label}>
-              <Box sx={{ bgcolor: "#F7F9FC", borderRadius: 2.5, p: 2.5, border: "1px solid rgba(0,0,0,0.05)" }}>
-                <Typography sx={{ fontSize: "0.72rem", color: "#5A6A85", mb: 0.5 }}>{k.label}</Typography>
-                <Typography sx={{ fontFamily: '"Syne",sans-serif', fontWeight: 700, fontSize: "1.4rem", color: "#0D1B3E" }}>
+            <Grid item xs={16} md={16} key={k.label}>
+              <Box sx={{ bgcolor: "#F7F9FC", borderRadius: 5, p: 3, border: "1px solid rgba(0,0,0,0.05)" }}>
+                <Typography sx={{ fontSize: "0.72rem", color: "#5A6A85", mb: 1 }}>{k.label}</Typography>
+                <Typography sx={{ fontFamily: '"Syne",sans-serif', fontWeight: 900, fontSize: "1.4rem", color: "#0D1B3E" }}>
                   {k.value}
                 </Typography>
-                <Chip label={k.change} size="small" sx={{ mt: 0.5, bgcolor: k.color + "15", color: k.color, fontSize: "0.62rem", height: 20, fontWeight: 600 }} />
+                <Chip label={k.change} size="small" sx={{ mt: 1, bgcolor: k.color + "15", color: k.color, fontSize: "0.62rem", height: 10, fontWeight: 900 }} />
               </Box>
             </Grid>
           ))}
@@ -72,12 +72,12 @@ export default function Dashboard() {
           </Grid>
 
           {/* Pie chart */}
-          <Grid item xs={12} md={4}>
-            <Box sx={{ bgcolor: "#F7F9FC", borderRadius: 2.5, p: 3, border: "1px solid rgba(0,0,0,0.05)", height: "100%" }}>
+          <Grid item xs={12} md={8}>
+            <Box sx={{ bgcolor: "#F7F9FC", borderRadius: 2.5, p: 2.5, border: "1px solid rgba(0,0,0,0.05)"}}>
               <Typography sx={{ fontFamily: '"Syne",sans-serif', fontWeight: 600, fontSize: "0.9rem", color: "#0D1B3E", mb: 2 }}>
                 Service Distribution
               </Typography>
-              <ResponsiveContainer width="100%" height={140}>
+              <ResponsiveContainer width="100%" height={130}>
                 <PieChart>
                   <Pie data={pieData} cx="50%" cy="50%" innerRadius={40} outerRadius={65} dataKey="value" strokeWidth={0}>
                     {pieData.map((e, i) => <Cell key={i} fill={e.color} />)}
