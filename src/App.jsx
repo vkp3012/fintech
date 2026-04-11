@@ -4,16 +4,16 @@ import { Box } from "@mui/material";
 import theme from "./theme/theme";
 
 // Layout components
-import Header       from "./component/Header.jsx";
-import Footer       from "./component/footer.jsx";
-import AIChatButton from "./component/chat";
-import ScrollTop    from "./component/scrolltop.jsx";
+import Header       from "./components/Header";
+import Footer       from "./components/footer";
+import AIChatButton from "./components/chat";
+import ScrollTop    from "./components/scrolltop";
 
 // Page sections
-import Hero      from "./sections/hero.jsx";
-import Services  from "./sections/service.jsx";
+import Hero      from "./sections/hero";
+import Services  from "./sections/service";
 import Dashboard from "./sections/deskboard";
-import About     from "./sections/about.jsx";
+import About     from "./sections/about";
 import Pricing   from "./sections/pricing";
 import Contact   from "./sections/contact";
 
