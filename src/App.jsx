@@ -1,21 +1,21 @@
 import { ThemeProvider } from "@mui/material/styles";
 import { Box } from "@mui/material";
 
-import theme from "./theme/Theme";
+import theme from "./theme/theme";
 
 // Layout components
 import Header       from "./component/Header";
-import Footer       from "./component/Footer";
+import Footer       from "./component/footer";
 import AIChatButton from "./component/chat";
-import ScrollTop    from "./component/ScrollTop";
+import ScrollTop    from "./component/scrolltop";
 
 // Page sections
-import Hero      from "./sections/Hero";
-import Services  from "./sections/Service";
+import Hero      from "./sections/hero";
+import Services  from "./sections/service";
 import Dashboard from "./sections/deskboard";
-import About     from "./sections/About";
-import Pricing   from "./sections/Pricing";
-import Contact   from "./sections/Contact";
+import About     from "./sections/about";
+import Pricing   from "./sections/pricing";
+import Contact   from "./sections/contact";
 
 /**
  * Smooth-scroll helper.
