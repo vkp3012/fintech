@@ -5,17 +5,17 @@ import theme from "./theme/theme";
 
 // Layout components
 import Header       from "./component/Header";
-import Footer       from "./component/footer";
+import Footer       from "./component/Footer";
 import AIChatButton from "./component/chat";
-import ScrollTop    from "./component/scrolltop";
+import ScrollTop    from "./component/Scrolltop";
 
 // Page sections
 import Hero      from "./sections/hero";
-import Services  from "./sections/service";
-import Dashboard from "./sections/deskboard";
-import About     from "./sections/about";
-import Pricing   from "./sections/pricing";
-import Contact   from "./sections/contact";
+import Services  from "./sections/Service";
+import Dashboard from "./sections/Deskboard";
+import About     from "./sections/About";
+import Pricing   from "./sections/Pricing";
+import Contact   from "./sections/Contact";
 
 /**
  * Smooth-scroll helper.
