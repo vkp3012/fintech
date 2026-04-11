@@ -4,10 +4,10 @@ import { Box } from "@mui/material";
 import theme from "./theme/theme";
 
 // Layout components
-import Header       from "./components/Header";
-import Footer       from "./components/footer";
-import AIChatButton from "./components/chat";
-import ScrollTop    from "./components/scrolltop";
+import Header       from "./component/Header";
+import Footer       from "./component/footer";
+import AIChatButton from "./component/chat";
+import ScrollTop    from "./component/scrolltop";
 
 // Page sections
 import Hero      from "./sections/hero";
