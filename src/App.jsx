@@ -1,18 +1,18 @@
 import { ThemeProvider } from "@mui/material/styles";
 import { Box } from "@mui/material";
 
-import theme from "./theme/theme";
+import theme from "./theme/Theme";
 
 // Layout components
 import Header       from "./component/Header";
 import Footer       from "./component/Footer";
-import AIChatButton from "./component/chat.jsx";
+import AIChatButton from "./component/chat";
 import ScrollTop    from "./component/ScrollTop";
 
 // Page sections
 import Hero      from "./sections/Hero";
 import Services  from "./sections/Service";
-import Dashboard from "./sections/deskboard.jsx";
+import Dashboard from "./sections/deskboard";
 import About     from "./sections/About";
 import Pricing   from "./sections/Pricing";
 import Contact   from "./sections/Contact";

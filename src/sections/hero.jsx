@@ -3,7 +3,7 @@ import { ArrowForward } from "@mui/icons-material";
 import {
   AreaChart, Area, ResponsiveContainer, Tooltip, XAxis,
 } from "recharts";
-import { STATS, revenueData } from "../constants/data.jsx";
+import { STATS, revenueData } from "../constants/data";
 
 export default function Hero({ onSectionClick }) {
   return (

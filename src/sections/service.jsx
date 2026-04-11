@@ -1,6 +1,6 @@
 import { Box, Container, Grid, Typography, Stack, Chip } from "@mui/material";
 import { CheckCircle } from "@mui/icons-material";
-import { SERVICES, ICON_MAP } from "../constants/data.jsx";
+import { SERVICES, ICON_MAP } from "../constants/data";
 
 export default function Services() {
   return (
